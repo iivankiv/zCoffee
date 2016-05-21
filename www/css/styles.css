@@ -31,6 +31,17 @@ body {
 a {
   text-decoration: none;
 }
+.clear {
+  *zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
 /*HEADER*/
 .wrap-top {
   margin: 0;
@@ -126,20 +137,13 @@ a {
   background-image: url(../images/search.png);
   background-repeat: no-repeat;
   background-position: 100% 50%, 100% 100%;
-  border: 0px solid;
+  border: 0 solid;
   height: 30px;
   width: 2.5em;
   float: right;
   margin-right: 2px;
 }
 @media only screen and (max-width: 480px) {
-  .wrap-top .header-bottom {
-    /*form.search {
-                    input {
-                        width: 100%;
-                    }
-                }*/
-  }
   .wrap-top .header-bottom .col-xs-6 {
     width: 100%;
   }
@@ -264,13 +268,13 @@ nav a#pull {
   width: 80%;
 }
 .wrap-items .col-md-9 .col-md-3 .name-item {
-  padding: 0px;
+  padding: 0;
 }
 .wrap-items .col-md-9 .col-md-3 .name-item h5 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .wrap-items .col-md-9 .col-md-3 .price-item {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 1em;
 }
 .wrap-items .col-md-9 .col-md-3 .price-item h4 {
